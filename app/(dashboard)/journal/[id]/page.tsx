@@ -28,7 +28,7 @@ const JournalEntryPage = async ({ params }: JournalEntryPageProps) => {
   const entry = await getEntry(params.id)
 
   return (
-    <div>
+    <div className='h-full w-full'>
       <EntryEditor entry={entry} />
     </div>
   )
